@@ -29,15 +29,9 @@ import ProfPanel from "./components/TheProfComponent.js";
         },
 
         methods: {
-            // logClicked() {
-            //     console.log("clicked on a button");
-            // },
             showData(item) {
                 this.currentProf = item.name;
                 this.role = item.role;
-            },
-            sendForm() {
-                console.log(this.username, this.password);
             },
         },
         components: {

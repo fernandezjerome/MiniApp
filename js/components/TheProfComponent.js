@@ -1,13 +1,11 @@
 export default {
-    name: "TheProfComponent",
+    // name: "TheProfComponentsssss",
 
-    props: ["item"],
+    // props: ["item"],
 
-    template: ` <section>
-    
-    
-    
-    <h1 class= "prof_name"> {{ name }}</h1>
+    template: `
+    <section>
+        <h1 class= "prof_name"> {{ name }}</h1>
     </section>
     `,
 

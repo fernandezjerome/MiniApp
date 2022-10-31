@@ -14,23 +14,11 @@
 
             <div v-for="item in dynamicData">
                 <button @click="showData(item)">Show My data!</button>
-
-                <!-- <h3>{{ item.name }}</h3>
-                    <h4>{{ item.nickname }}</h4>
-                    <h5>{{ item.role }}</h5> -->
             </div>
 
-            <!--<p>{{ anotherMessage }}</p>
-  <span>{{ yetAnothermessage }}</span>
-  <ul>
-    <li v-for="prof in profs">
-        <h1>{{ prof }}</h1>
-        <button @click="logClicked">Show my data</button>
-    </li>
-  </ul>-->
             <section>
-                <pre>{{ currentProf }}</pre>
-                <pre>{{ role }}</pre>
+                <h3>{{ currentProf }}</h3>
+                <p>{{ role }}</p>
             </section>
         </main>
 
