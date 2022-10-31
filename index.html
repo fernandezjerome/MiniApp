@@ -4,132 +4,39 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Hackaton House Com</title>
-        <script
-            src="https://kit.fontawesome.com/62e3d456b9.js"
-            crossorigin="anonymous"
-        ></script>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
-            rel="stylesheet"
-        />
-
-        <link rel="stylesheet" href="css/main.css" />
+        <title>.:Using vue:.</title>
     </head>
     <body>
-        <header class="header head-colour">
-            <nav id="sidenav">
-                <a href="#">Home</a>
-                <a href="#">Link1</a>
-                <a href="#">Link2</a>
-                <a href="#">Link3</a>
-                <a href="#">Link4</a>
-            </nav>
+        <main id="app">
+            <!--This is a hook that tells -->
+            <!-- <h1>{{ message }}</h1> -->
+            <profpanel v-for="item in dynamicData"> </profpanel>
 
-            <nav class="header__nav">
-                <!-- grid 1 logo icon-->
-                <div class="header__logo">
-                    <img src="images/logo.svg" alt="logo template" />
-                </div>
-                <!-- grid 2 -->
-                <a id="btnHamburger" href="#" class="header__burger">
-                    <span></span>
-                    <!-- for easier to click on menu -->
-                    <div></div>
-                </a>
-                <!-- grid 3 -->
-                <li class="header__links">
-                    <a href="#">Home</a>
-                    <a href="#">Link1</a>
-                    <a href="#">Link2</a>
-                    <a href="#">Link3</a>
-                    <a href="#">Link4 </a>
-                </li>
-                <!-- grid 4 -->
-                <a href="#" class="header__btn btn">lorem</a>
-                <i class="fa-solid fa-paper-plane header__qoute"></i>
-            </nav>
-        </header>
+            <div v-for="item in dynamicData">
+                <button @click="showData(item)">Show My data!</button>
 
-        <main>
-            <div id="app" v-cloak>
-                {{ message }}
-                <button @click="ChangeTheMsg">Test Change message</button>
+                <!-- <h3>{{ item.name }}</h3>
+                    <h4>{{ item.nickname }}</h4>
+                    <h5>{{ item.role }}</h5> -->
             </div>
+
+            <!--<p>{{ anotherMessage }}</p>
+  <span>{{ yetAnothermessage }}</span>
+  <ul>
+    <li v-for="prof in profs">
+        <h1>{{ prof }}</h1>
+        <button @click="logClicked">Show my data</button>
+    </li>
+  </ul>-->
+            <section>
+                <pre>{{ currentProf }}</pre>
+                <pre>{{ role }}</pre>
+            </section>
         </main>
-        <footer class="footer">
-            <nav class="footer__nav">
-                <section class="footer__links">
-                    <div>
-                        <h3>Official Links</h3>
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                                <a href="#">Service</a>
-                                <a href="#">About us</a>
-                                <a href="#">Contact us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="footer__useful">
-                    <div>
-                        <h3>Useful Links</h3>
-                        <ul>
-                            <li>
-                                <a href="#">Help</a>
-                                <a href="#">History</a>
-                                <a href="#">Support</a>
-                                <a href="#">Faq</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
 
-                <section class="footer__contact">
-                    <h3>Contact Information</h3>
-                    <div>
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        <p>1001 Fanshawe College Blvd, London, ON N5Y 5R6</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>yourmail@gmail.com</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-phone"></i>
-                        <p>011548454544</p>
-                    </div>
-                </section>
-                <section class="footer__logo">
-                    <div>
-                        <img src="images/logo.svg" alt="logo tempalte" />
-                    </div>
-                    <div>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Magnam earum ratione veritatis sint. Aliquid
-                            error perferendis quod a dignissimos ea.
-                        </p>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                    </div>
-                </section>
-                <section class="footer__reserve">
-                    <p>Lorem Ipsum 2022</p>
-                </section>
-            </nav>
-        </footer>
-
+        <!-- load the third party library first -->
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <!-- and then your own -->
         <script src="js/main.js" type="module" defer></script>
     </body>
 </html>
