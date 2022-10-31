@@ -55,7 +55,10 @@
         </header>
 
         <main>
-            <div id="app">{{ message }}</div>
+            <div id="app" v-cloak>
+                {{ message }}
+                <button @click="ChangeTheMsg">Test Change message</button>
+            </div>
         </main>
         <footer class="footer">
             <nav class="footer__nav">
