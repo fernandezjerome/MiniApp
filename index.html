@@ -8,18 +8,22 @@
     </head>
     <body>
         <main id="app">
+            <button>aaa</button>
+
             <!--This is a hook that tells -->
             <!-- <h1>{{ message }}</h1> -->
-            <profpanel v-for="item in dynamicData"> </profpanel>
+            <!-- <profpanel v-for="item in dynamicData"> </profpanel> -->
 
             <div v-for="item in dynamicData">
-                <button @click="showData(item)">Show My data!</button>
+                <button class="text-green" @click="showData(item)">
+                    Show My data!
+                </button>
             </div>
 
-            <section>
+            <pre>
                 <h3>{{ currentProf }}</h3>
                 <p>{{ role }}</p>
-            </section>
+            </pre>
         </main>
 
         <!-- load the third party library first -->
