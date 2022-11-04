@@ -4,31 +4,93 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>.:Using vue:.</title>
+        <title>Mini App</title>
+        <script
+            src="https://kit.fontawesome.com/62e3d456b9.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/main.css" />
     </head>
+
     <body>
-        <main id="app">
-            <button>aaa</button>
+        <header class="header head-colour">
+            <nav id="sidenav">
+                <a href="#">electric</a>
+                <a href="#">3 doors</a>
+                <a href="#">5 doors</a>
+                <a href="#">countryman</a>
+                <a href="#">convertible</a>
+            </nav>
 
-            <!--This is a hook that tells -->
-            <!-- <h1>{{ message }}</h1> -->
-            <!-- <profpanel v-for="item in dynamicData"> </profpanel> -->
+            <nav class="header__nav">
+                <!-- grid 1 logo icon-->
+                <div class="header__logo">
+                    <img src="images/mini-logo.svg" alt="mini cooper logo" />
+                </div>
+                <!-- grid 2 -->
+                <a id="btnHamburger" href="#" class="header__burger">
+                    <span></span>
+                    <!-- for easier to click on menu -->
+                    <div></div>
+                </a>
+                <!-- grid 3 -->
+                <li class="header__links">
+                    <a href="#">electric</a>
+                    <a href="#">3 doors</a>
+                    <a href="#">5 doors</a>
+                    <a href="#">countryman</a>
+                    <a href="#">convertible</a>
+                </li>
+                <!-- grid 4 -->
+                <a href="#" class="header__btn btn">Get a Qoute</a>
+                <i class="fa-solid fa-paper-plane header__qoute"></i>
+            </nav>
 
-            <div v-for="item in dynamicData">
-                <button class="text-green" @click="showData(item)">
-                    Show My data!
-                </button>
-            </div>
+            <nav class="header__sub">
+                <ul>
+                    <li>
+                        <a href="#">mini 3 door</a>
+                        <a href="#">line up</a>
+                        <a href="#">highligh & features</a>
+                        <a href="#">stay in the know</a>
+                        <a href="#">gallery</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-            <pre>
-                <h3>{{ currentProf }}</h3>
-                <p>{{ role }}</p>
-            </pre>
-        </main>
+        <main></main>
 
-        <!-- load the third party library first -->
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <!-- and then your own -->
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul>
+                    <li>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Cookies & Ads</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">Term Use</a>
+                        <a href="#">Unsubscribe</a>
+                        <a href="#">BMW Group</a>
+                        <a href="#">Change province (AB) </a>
+                        <a href="#">Francais</a>
+                    </li>
+                </ul>
+                <div class="footer__logo">
+                    <p>© 2022 MINI Canada.</p>
+                    <img src="images/mini-logo.svg" alt="" />
+                </div>
+            </nav>
+        </footer>
+
         <script src="js/main.js" type="module" defer></script>
     </body>
 </html>
