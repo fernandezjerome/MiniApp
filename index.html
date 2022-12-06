@@ -67,7 +67,34 @@
             </nav>
         </header>
 
-        <main></main>
+        <main id="app">
+            <nav id="character-nav">
+                <ul class="characters">
+                    <!-- hero thumb component goes here -->
+                    <theherothumb
+                        @loadlbdata="loadLightbox"
+                        v-for="hero in heroData"
+                        :hero="hero"
+                    ></theherothumb>
+                </ul>
+            </nav>
+
+            <article>
+                <h3>Choose Your Hero!</h3>
+                <p>
+                    Use your mouse to hover / click to discover more about each
+                    Marvel character
+                </p>
+            </article>
+
+            <!-- custom lightbox component goes here -->
+            <thelightbox
+                @closelightbox="this.showLB=false"
+                v-if="showLB"
+                :item="lbData"
+            ></thelightbox>
+            <!-- end lightbox -->
+        </main>
 
         <footer class="footer">
             <nav class="footer__nav">
@@ -90,6 +117,7 @@
                 </div>
             </nav>
         </footer>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
         <script src="js/main.js" type="module" defer></script>
     </body>

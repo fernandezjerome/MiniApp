@@ -1,6 +1,10 @@
 @use "../modules" as *;
 
 .footer {
+    li {
+        // display: flex;
+        // flex-flow: column wrap;
+    }
     a {
         margin-right: px(20);
     }
@@ -8,7 +12,7 @@
     display: flex;
     justify-content: center;
     img {
-        margin-top: px(10);
+        margin: px(20) 0;
         width: px(82);
     }
     &__nav {
