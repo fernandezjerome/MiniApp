@@ -1,5 +1,5 @@
 export default {
-    name: "TheHeroThumb",
+    name: "TheCarsThumb",
 
     emits: ["loadlbdata"],
 
@@ -9,10 +9,10 @@ export default {
 
     template: `
     <li @click="loadLBData">
-        <img :src='"images/" + hero.image' alt="hero img" style="width: 150px">
+        <img :src='"images/" + hero.biopic' alt="hero img" style="width: 150px">
         <!-- <div class="sprite" id="cap"></div> -->
         <div class="red-bumper"></div>
-       // <h5>{{hero.name}}</h5>
+        <h5>{{hero.name}}</h5>
     </li>
     `,
 

@@ -2,18 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mini App</title>
-        <script
-            src="https://kit.fontawesome.com/62e3d456b9.js"
-            crossorigin="anonymous"
-        ></script>
+        <title>Marvel Characters Team Page</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
             rel="stylesheet"
         />
 
@@ -66,36 +61,34 @@
                 </ul>
             </nav>
         </header>
+        <main>
+            <h1 class="hidden">mini cooper app</h1>
+            <section class="hero-page">
+                <h2>OPEN UP.</h2>
+                <p>THE MINI CONVERTIBLE. STARTING FROM $43,390.</p>
+            </section>
+            <section id="app">
+                <nav id="character-nav">
+                    <ul class="characters">
+                        <!-- hero thumb component goes here -->
+                        <thecarsthumb
+                            @loadlbdata="loadLightbox"
+                            v-for="hero in carData"
+                            :hero="hero"
+                        ></thecarsthumb>
+                    </ul>
+                </nav>
 
-        <main id="app">
-            <nav id="character-nav">
-                <ul class="characters">
-                    <!-- hero thumb component goes here -->
-                    <theherothumb
-                        @loadlbdata="loadLightbox"
-                        v-for="hero in heroData"
-                        :hero="hero"
-                    ></theherothumb>
-                </ul>
-            </nav>
-
-            <article>
-                <h3>Choose Your Hero!</h3>
-                <p>
-                    Use your mouse to hover / click to discover more about each
-                    Marvel character
-                </p>
-            </article>
-
-            <!-- custom lightbox component goes here -->
-            <thelightbox
-                @closelightbox="this.showLB=false"
-                v-if="showLB"
-                :item="lbData"
-            ></thelightbox>
-            <!-- end lightbox -->
+                <!-- custom lightbox component goes here -->
+                <thelightbox
+                    @closelightbox="this.showLB=false"
+                    v-if="showLB"
+                    :item="lbData"
+                ></thelightbox>
+                <!-- end lightbox -->
+            </section>
         </main>
-
+        <!-- make this a sticky footer so it's always at the bottom-->
         <footer class="footer">
             <nav class="footer__nav">
                 <ul>
@@ -117,8 +110,9 @@
                 </div>
             </nav>
         </footer>
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
+        <!-- load script tags at the bottom -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="js/main.js" type="module" defer></script>
     </body>
 </html>

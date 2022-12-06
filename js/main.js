@@ -1,38 +1,38 @@
 // import components first!!
-import HeroThumb from './components/TheHeroThumbnail.js';
-import LightBox from './components/TheLightbox.js';
+import HeroThumb from "./components/TheCarsThumbnail.js";
+import LightBox from "./components/TheLightbox.js";
 
 (() => {
     // create vue instance here
-    const { createApp } = Vue
+    const { createApp } = Vue;
 
     createApp({
         created() {
             // ALWAYS get your remote data here
-            fetch('./scripts/json.php')
-                .then(res => res.json())
-                .then(data => this.heroData = data)
-            .catch(error => console.error(error));
+            fetch("./scripts/json.php")
+                .then((res) => res.json())
+                .then((data) => (this.carData = data))
+                .catch((error) => console.error(error));
         },
 
         data() {
             return {
-                heroData: {},
+                carData: {},
                 lbData: {},
-                showLB: false
-            }
+                showLB: false,
+            };
         },
 
         components: {
-            theherothumb: HeroThumb,
-            thelightbox: LightBox
+            thecarsthumb: HeroThumb,
+            thelightbox: LightBox,
         },
 
         methods: {
             loadLightbox(hero) {
                 this.lbData = hero;
                 this.showLB = true;
-            }
-        }
-    }).mount('#app')
-})()
+            },
+        },
+    }).mount("#app");
+})();
