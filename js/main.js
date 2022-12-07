@@ -31,7 +31,7 @@ import LightBox from "./components/TheLightbox.js";
         methods: {
             loadLightbox(hero) {
                 this.lbData = hero;
-                this.showLB = true;
+                this.showLB = !this.showLB;
             },
         },
     }).mount("#app");

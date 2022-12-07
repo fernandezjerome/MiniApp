@@ -42,6 +42,7 @@
 }
 
 .lightbox {
+    @include transitionEase;
     padding-bottom: px(50);
     background-color: $colour-gray;
     h3 {

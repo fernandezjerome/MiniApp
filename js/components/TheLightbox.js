@@ -8,9 +8,9 @@ export default {
     template: `
     <section class="lightbox">
  
-        <img @click="closeLB" src="images/closeIcon.png" class="lightbox_close">
+        
                    <h2 class="hidden">Mini cooper details</h2>
-                <div class="lightbox__section">
+                <div @click="closeLB" class="lightbox__section">
                     <div class="lightbox__main">
                         
                         <img :src='"images/" + item.biopic' alt="">
