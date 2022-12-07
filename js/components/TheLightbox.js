@@ -7,22 +7,50 @@ export default {
 
     template: `
     <section class="lightbox">
-        <!-- just to validate data - remove when working -->
-        <pre>{{item}}</pre>
-        <!-- end data validation -->
-
+ 
         <img @click="closeLB" src="images/closeIcon.png" class="lightbox_close">
-        <!-- hero image on the left, text on the right -->
-        <!-- her image is a background image -->
-        <article>
-            <h3 class="lb_heading">Captain America - the First Avenger</h3>
-            <p class="lb_text">
-               Fugsy sit amet consectetur, adipisicing elit. Nostrum autem pariatur dicta eum dolorum nulla neque laborum praesentium quo possimus, mollitia, dolor omnis rerum dolorem ratione in natus? Nihil, mollitia!
-            </p>
-            <p class="lb_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat totam, unde quam aspernatur quasi delectus sed earum nobis voluptate voluptas suscipit repudiandae explicabo placeat numquam error. Praesentium, quisquam illum.
-            </p>
-        </article>
+                   <h2 class="hidden">Mini cooper details</h2>
+                <div class="lightbox__section">
+                    <div class="lightbox__main">
+                        <img src="/images/cooper.png" alt="" />
+                        <h3>2023 MINI JOHN COOPER WORKS CONVERTIBLE</h3>
+                        <p>All-Inclusive Price: $57,856</p>
+                        <div>
+                            <button class="green-buttons">
+                                BOOK A TEST DRIVE
+                            </button>
+                            <button class="green-buttons">
+                                DESIGN YOUR OWN
+                            </button>
+                        </div>
+                    </div>
+                    <div class="lightbox__computation">
+                        <div class="lightbox__lease">
+                            <h4>LEASE</h4>
+                            <div class="lightbox__grayBG">
+                                <p>Rate Starting from</p>
+                                <h5>5.99%</h5>
+                                <p>48 Months</p>
+                            </div>
+                            <p>Monthly Payment starting from</p>
+                            <h5>$700</h5>
+                            <p>Incl. Freight PDI</p>
+                        </div>
+                        <div class="lightbox__finance">
+                            <h4>LEASE</h4>
+                            <div class="lightbox__grayBG">
+                                <p>Rate Starting from</p>
+                                <h5>5.99%</h5>
+                                <p>48 Months</p>
+                            </div>
+                            <p>Monthly Payment starting from</p>
+                            <h5>$700</h5>
+                            <p>Incl. Freight PDI</p>
+                        </div>
+                    </div>
+                </div>
+
+      
     </section>
     `,
 

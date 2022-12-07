@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Marvel Characters Team Page</title>
+        <title>Mini App</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,13 +37,13 @@
                     <div></div>
                 </a>
                 <!-- grid 3 -->
-                <li class="header__links">
+                <div class="header__links">
                     <a href="#">electric</a>
                     <a href="#">3 doors</a>
                     <a href="#">5 doors</a>
                     <a href="#">countryman</a>
                     <a href="#">convertible</a>
-                </li>
+                </div>
                 <!-- grid 4 -->
                 <a href="#" class="header__btn btn">Get a Qoute</a>
                 <i class="fa-solid fa-paper-plane header__qoute"></i>
@@ -95,7 +95,7 @@
             </section>
 
             <!-- thumbnail -->
-            <section class="gray-bg">
+            <!-- <section class="gray-bg">
                 <div class="thumbnails">
                     <div class="thumbnails__section">
                         <img class="image" src="images/cooper.png" alt="" />
@@ -104,8 +104,8 @@
                         <img
                             src="images/arrow-down.svg"
                             alt=""
-                            width="30.1"
-                            height="16.4"
+                            width="30"
+                            height="16"
                         />
                     </div>
                     <div class="thumbnails__section">
@@ -115,8 +115,8 @@
                         <img
                             src="images/arrow-down.svg"
                             alt=""
-                            width="30.1"
-                            height="16.4"
+                            width="30"
+                            height="16"
                         />
                     </div>
                     <div class="thumbnails__section">
@@ -126,8 +126,8 @@
                         <img
                             src="images/arrow-down.svg"
                             alt=""
-                            width="30.1"
-                            height="16.4"
+                            width="30"
+                            height="16"
                         />
                     </div>
                     <div class="thumbnails__section">
@@ -137,51 +137,59 @@
                         <img
                             src="images/arrow-down.svg"
                             alt=""
-                            width="30.1"
-                            height="16.4"
+                            width="30"
+                            height="16"
                         />
                     </div>
                 </div>
-            </section>
-
+            </section> -->
+            <!-- 
             <section class="lightbox">
+                <h2 class="hidden">Mini cooper details</h2>
                 <div class="lightbox__section">
                     <div class="lightbox__main">
                         <img src="/images/cooper.png" alt="" />
                         <h3>2023 MINI JOHN COOPER WORKS CONVERTIBLE</h3>
                         <p>All-Inclusive Price: $57,856</p>
                         <div>
-                            <button>BOOK A TEST DRIVE</button>
-                            <button>DESIGN YOUR OWN</button>
+                            <button class="green-buttons">
+                                BOOK A TEST DRIVE
+                            </button>
+                            <button class="green-buttons">
+                                DESIGN YOUR OWN
+                            </button>
                         </div>
                     </div>
-                    <div class="lightbox__computaion">
+                    <div class="lightbox__computation">
                         <div class="lightbox__lease">
                             <h4>LEASE</h4>
-                            <p>Rate Starting from</p>
-                            <p>5.99%</p>
-                            <p>48 Months</p>
-                            <h5>Monthly Payment starting from</h5>
-                            <p>$700</p>
+                            <div class="lightbox__grayBG">
+                                <p>Rate Starting from</p>
+                                <h5>5.99%</h5>
+                                <p>48 Months</p>
+                            </div>
+                            <p>Monthly Payment starting from</p>
+                            <h5>$700</h5>
                             <p>Incl. Freight PDI</p>
                         </div>
                         <div class="lightbox__finance">
                             <h4>LEASE</h4>
-                            <p>Rate Starting from</p>
-                            <p>5.99%</p>
-                            <p>48 Months</p>
-                            <h5>Monthly Payment starting from</h5>
-                            <p>$700</p>
+                            <div class="lightbox__grayBG">
+                                <p>Rate Starting from</p>
+                                <h5>5.99%</h5>
+                                <p>48 Months</p>
+                            </div>
+                            <p>Monthly Payment starting from</p>
+                            <h5>$700</h5>
                             <p>Incl. Freight PDI</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <section id="app">
-                <nav id="character-nav">
+                <nav class="gray-bg">
                     <ul class="thumbnails">
-                        <!-- hero thumb component goes here -->
                         <thecarsthumb
                             @loadlbdata="loadLightbox"
                             v-for="hero in carData"
@@ -190,15 +198,14 @@
                     </ul>
                 </nav>
 
-                <!-- custom lightbox component goes here -->
                 <thelightbox
                     @closelightbox="this.showLB=false"
                     v-if="showLB"
                     :item="lbData"
                 ></thelightbox>
-                <!-- end lightbox -->
             </section>
 
+            <!-- GALLERY -->
             <section class="highlighs">
                 <div class="highlighs__copy headline">
                     <p>DISCOVER THE DETAILS.</p>
@@ -217,12 +224,24 @@
                     </p>
                 </div>
                 <div class="parent">
-                    <div class="div1"><img src="images/1-en.jpg" alt="" /></div>
-                    <div class="div2"><img src="images/2-en.jpg" alt="" /></div>
-                    <div class="div3"><img src="images/3-en.jpg" alt="" /></div>
-                    <div class="div4"><img src="images/4-en.jpg" alt="" /></div>
-                    <div class="div5"><img src="images/5-en.jpg" alt="" /></div>
-                    <div class="div6"><img src="images/6-en.jpg" alt="" /></div>
+                    <div class="div1">
+                        <img src="images/1-en.jpg" alt="gallery image 1" />
+                    </div>
+                    <div class="div2">
+                        <img src="images/2-en.jpg" alt="gallery image 1" />
+                    </div>
+                    <div class="div3">
+                        <img src="images/3-en.jpg" alt="gallery image 1" />
+                    </div>
+                    <div class="div4">
+                        <img src="images/4-en.jpg" alt="gallery image 1" />
+                    </div>
+                    <div class="div5">
+                        <img src="images/5-en.jpg" alt="gallery image 1" />
+                    </div>
+                    <div class="div6">
+                        <img src="images/6-en.jpg" alt="gallery image 1" />
+                    </div>
                 </div>
             </section>
             <div class="green-border"></div>

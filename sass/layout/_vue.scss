@@ -26,7 +26,7 @@
         p {
             font-weight: 700;
             font-size: px(14);
-            margin-bottom: px(10);
+            margin-bottom: px(20);
         }
     }
 }
@@ -42,7 +42,20 @@
 }
 
 .lightbox {
+    padding-bottom: px(50);
+    background-color: $colour-gray;
+    h3 {
+        font-family: $font-script;
+        font-size: px(22);
+        margin: px(20);
+    }
+    p {
+        font-family: $font-script;
+    }
+
     &__section {
+        padding: px(50);
+        background-color: white;
         display: grid;
         margin-inline: auto;
         align-items: center;
@@ -57,15 +70,32 @@
     &__main {
         text-align: center;
         img {
-            @include imagefit(px(184));
+            @include imagefit(px(220));
         }
     }
-    &__computaion {
+    &__computation {
         display: flex;
         gap: px(20);
     }
     &__lease,
     &__finance {
         text-align: center;
+        h4 {
+            font-family: $font-script;
+            font-size: px(22);
+        }
+        h5 {
+            font-family: $font-script;
+            font-size: px(30);
+        }
+        p {
+            font-family: $font-script;
+            font-size: px(12);
+        }
+    }
+    &__grayBG {
+        padding: px(10) 0;
+        margin: px(10) 0 px(20);
+        background-color: $colour-gray;
     }
 }
