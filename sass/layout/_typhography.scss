@@ -16,32 +16,3 @@
         font-size: px(16);
     }
 }
-
-//body
-main {
-    color: $colour-darkest;
-    h1 {
-        font-size: px(50);
-        line-height: px(55);
-        @include breakpoint(desktop) {
-            font-size: px(60);
-            line-height: px(55);
-        }
-    }
-}
-
-body {
-    h2 {
-        font-size: px(30);
-        @include breakpoint(tablet) {
-            font-size: px(35);
-        }
-    }
-}
-
-//footer
-footer {
-    font-size: px(15);
-    text-transform: initial;
-    font-weight: weight(medium);
-}

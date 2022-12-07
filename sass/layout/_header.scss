@@ -104,7 +104,7 @@
                 margin-right: px(5);
             }
             &:hover {
-                background-color: $colour-whitegray;
+                background-color: $colour-gray;
             }
         }
 
@@ -122,10 +122,10 @@
     }
     &__qoute {
         font-size: px(25);
-        color: $colour1;
+        color: $colour-darkest;
         cursor: pointer;
         &:hover {
-            color: $colour2;
+            color: $colour-darkest;
             @include transitionEase;
         }
 
@@ -148,10 +148,10 @@
     height: 60vh;
     width: 40vh;
     overflow: hidden;
-    background-color: $colour1;
+    background-color: $colour-darkest;
     padding-right: px(16);
     a {
-        color: $colour-whitegray;
+        color: $colour-gray;
         padding: px(10);
         &:not(:last-child) {
             margin-bottom: px(40);
