@@ -12,9 +12,10 @@ export default {
                    <h2 class="hidden">Mini cooper details</h2>
                 <div class="lightbox__section">
                     <div class="lightbox__main">
-                        <img src="/images/cooper.png" alt="" />
-                        <h3>2023 MINI JOHN COOPER WORKS CONVERTIBLE</h3>
-                        <p>All-Inclusive Price: $57,856</p>
+                        
+                        <img :src='"images/" + item.biopic' alt="">
+                        <h3>{{ item.car_fullname}}</h3>
+                        <p> All-Inclusive Price: {{item.price}}</p>
                         <div>
                             <button class="green-buttons">
                                 BOOK A TEST DRIVE
@@ -29,22 +30,22 @@ export default {
                             <h4>LEASE</h4>
                             <div class="lightbox__grayBG">
                                 <p>Rate Starting from</p>
-                                <h5>5.99%</h5>
+                                <h5>{{item.lease}}</h5>
                                 <p>48 Months</p>
                             </div>
                             <p>Monthly Payment starting from</p>
-                            <h5>$700</h5>
+                            <h5>{{item.lease_monthly}}</h5>
                             <p>Incl. Freight PDI</p>
                         </div>
                         <div class="lightbox__finance">
-                            <h4>LEASE</h4>
+                            <h4>FINANCE</h4>
                             <div class="lightbox__grayBG">
                                 <p>Rate Starting from</p>
-                                <h5>5.99%</h5>
+                                <h5>{{item.finace}}</h5>
                                 <p>48 Months</p>
                             </div>
                             <p>Monthly Payment starting from</p>
-                            <h5>$700</h5>
+                            <h5>{{item.finance_monthly}}</h5>
                             <p>Incl. Freight PDI</p>
                         </div>
                     </div>
