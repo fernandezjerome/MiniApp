@@ -1,0 +1,71 @@
+@use "../modules" as *;
+.gray-bg {
+    padding-top: px(40);
+    background-color: $colour-gray;
+}
+
+.thumbnails {
+    display: grid;
+    margin-inline: auto;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    width: min(100% - px(20), px(1140));
+    @include breakpoint(tablet) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    &__section {
+        margin-bottom: px(10);
+        text-align: center;
+        h3 {
+            font-family: $font-script;
+            font-size: px(20);
+            margin: px(20) 0;
+        }
+        p {
+            font-weight: 700;
+            font-size: px(14);
+            margin-bottom: px(10);
+        }
+    }
+}
+
+.image {
+    @include imagefit(px(110));
+    @include breakpoint(tablet) {
+        @include imagefit(px(120));
+    }
+    @include breakpoint(tablet) {
+        @include imagefit(px(130));
+    }
+}
+
+.lightbox {
+    &__section {
+        display: grid;
+        margin-inline: auto;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100%, px(1140));
+        @include breakpoint(tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__main {
+        text-align: center;
+        img {
+            @include imagefit(px(184));
+        }
+    }
+    &__computaion {
+        display: flex;
+        gap: px(20);
+    }
+    &__lease,
+    &__finance {
+        text-align: center;
+    }
+}
