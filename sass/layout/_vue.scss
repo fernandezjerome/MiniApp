@@ -5,6 +5,7 @@
 }
 
 .thumbnails {
+    cursor: pointer;
     display: grid;
     margin-inline: auto;
     align-items: center;
@@ -55,6 +56,8 @@
     }
 
     &__section {
+        cursor: pointer;
+
         padding: px(50);
         background-color: white;
         display: grid;
