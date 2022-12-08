@@ -1,5 +1,5 @@
 // import components first!!
-import HeroThumb from "./components/TheCarsThumbnail.js";
+import CarThumb from "./components/TheCarsThumbnail.js";
 import LightBox from "./components/TheLightbox.js";
 
 (() => {
@@ -24,14 +24,14 @@ import LightBox from "./components/TheLightbox.js";
         },
 
         components: {
-            thecarsthumb: HeroThumb,
+            thecarsthumb: CarThumb,
             thelightbox: LightBox,
         },
 
         methods: {
             loadLightbox(hero) {
                 this.lbData = hero;
-                this.showLB = !this.showLB;
+                this.showLB = true;
             },
         },
     }).mount("#app");

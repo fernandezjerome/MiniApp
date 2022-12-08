@@ -7,13 +7,10 @@ export default {
 
     template: `
     <section class="lightbox">
- 
-        
                    <h2 class="hidden">Mini cooper details</h2>
                 <div @click="closeLB" class="lightbox__section">
-                    <div class="lightbox__main">
-                        
-                        <img :src='"images/" + item.biopic' alt="">
+                    <div class="lightbox__main">                        
+                        <img :src='"images/" + item.biopic' v-bind:alt="item.name">
                         <h3>{{ item.car_fullname}}</h3>
                         <p> All-Inclusive Price: {{item.price}}</p>
                         <div>
@@ -49,9 +46,7 @@ export default {
                             <p>Incl. Freight PDI</p>
                         </div>
                     </div>
-                </div>
-
-      
+                </div>      
     </section>
     `,
 
