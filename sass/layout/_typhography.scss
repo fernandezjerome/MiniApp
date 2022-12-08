@@ -1,0 +1,18 @@
+@use "../modules" as *;
+// "regular": 400,
+// "medium": 600,
+// "bold": 700,
+// "black": 900,
+
+// header
+.header {
+    color: $colour-darkest;
+    font-weight: weight(medium);
+    text-transform: uppercase;
+    font-size: px(15);
+}
+#sidenav {
+    a {
+        font-size: px(16);
+    }
+}

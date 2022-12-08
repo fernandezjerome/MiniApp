@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mini App</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+
+    <body>
+        <header class="header head-colour">
+            <nav id="sidenav">
+                <a href="#">electric</a>
+                <a href="#">3 doors</a>
+                <a href="#">5 doors</a>
+                <a href="#">countryman</a>
+                <a href="#">convertible</a>
+            </nav>
+
+            <nav class="header__nav">
+                <!-- grid 1 logo icon-->
+                <div class="header__logo">
+                    <img src="images/mini-logo.svg" alt="mini cooper logo" />
+                </div>
+                <!-- grid 2 -->
+                <a id="btnHamburger" href="#" class="header__burger">
+                    <span></span>
+                    <!-- for easier to click on menu -->
+                    <div></div>
+                </a>
+                <!-- grid 3 -->
+                <div class="header__links">
+                    <a href="#">electric</a>
+                    <a href="#">3 doors</a>
+                    <a href="#">5 doors</a>
+                    <a href="#">countryman</a>
+                    <a href="#">convertible</a>
+                </div>
+                <!-- grid 4 -->
+                <!-- <a href="#" class="header__btn btn">Get a Qoute</a> -->
+             
+            </nav>
+
+            <nav class="header__sub">
+                <ul>
+                    <li>
+                        <a href="#">mini 3 door</a>
+                        <a href="#">line up</a>
+                        <a href="#">highligh & features</a>
+                        <a href="#">stay in the know</a>
+                        <a href="#">gallery</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="hidden">mini cooper app</h1>
+            <section class="hero-page">
+                <div class="hero-page__copy headline">
+                    <h2>OPEN UP.</h2>
+                    <p>THE MINI CONVERTIBLE. STARTING FROM $43,390.</p>
+                </div>
+            </section>
+            <div class="green-border"></div>
+
+            <section class="page-info">
+                <div class="headline">
+                    <h2>MINI CONVERTIBLE</h2>
+                    <p>Book a test drive or design you own style.</p>
+                    <p>
+                        Meet the MINI Convertible – the most open-minded member
+                        of the MINI family. Featuring our signature 3-in-1 soft
+                        top roof and a refined interior with comfortable seating
+                        for four, it’s always ready for your next open-air
+                        adventure. And with a lively Twin Power Turbo engine
+                        that can hit 100 km/h in a blistering 6.3 seconds (in
+                        the John Cooper Works variant), it’s sure to deliver a
+                        few hair-raising thrills along the way. Discover the
+                        MINI Convertible today, and see the road in a whole new
+                        light
+                    </p>
+                    <div>
+                        <button class="green-buttons">BOOK A TEST DRIVE</button>
+                        <button class="green-buttons">DESIGN YOUR OWN</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- thumbnail -->
+            <!-- <section class="gray-bg">
+                <div class="thumbnails">
+                    <div class="thumbnails__section">
+                        <img class="image" src="images/cooper.png" alt="" />
+                        <h3>Cooper</h3>
+                        <p>VIEW DETIALS</p>
+                        <img
+                            src="images/arrow-down.svg"
+                            alt=""
+                            width="30"
+                            height="16"
+                        />
+                    </div>
+                    <div class="thumbnails__section">
+                        <img class="image" src="images/cooper.png" alt="" />
+                        <h3>Cooper</h3>
+                        <p>VIEW DETIALS</p>
+                        <img
+                            src="images/arrow-down.svg"
+                            alt=""
+                            width="30"
+                            height="16"
+                        />
+                    </div>
+                    <div class="thumbnails__section">
+                        <img class="image" src="images/cooper.png" alt="" />
+                        <h3>Cooper</h3>
+                        <p>VIEW DETIALS</p>
+                        <img
+                            src="images/arrow-down.svg"
+                            alt=""
+                            width="30"
+                            height="16"
+                        />
+                    </div>
+                    <div class="thumbnails__section">
+                        <img class="image" src="images/cooper.png" alt="" />
+                        <h3>Cooper</h3>
+                        <p>VIEW DETIALS</p>
+                        <img
+                            src="images/arrow-down.svg"
+                            alt=""
+                            width="30"
+                            height="16"
+                        />
+                    </div>
+                </div>
+            </section> -->
+            <!-- 
+            <section class="lightbox">
+                <h2 class="hidden">Mini cooper details</h2>
+                <div class="lightbox__section">
+                    <div class="lightbox__main">
+                        <img src="/images/cooper.png" alt="" />
+                        <h3>2023 MINI JOHN COOPER WORKS CONVERTIBLE</h3>
+                        <p>All-Inclusive Price: $57,856</p>
+                        <div>
+                            <button class="green-buttons">
+                                BOOK A TEST DRIVE
+                            </button>
+                            <button class="green-buttons">
+                                DESIGN YOUR OWN
+                            </button>
+                        </div>
+                    </div>
+                    <div class="lightbox__computation">
+                        <div class="lightbox__lease">
+                            <h4>LEASE</h4>
+                            <div class="lightbox__grayBG">
+                                <p>Rate Starting from</p>
+                                <h5>5.99%</h5>
+                                <p>48 Months</p>
+                            </div>
+                            <p>Monthly Payment starting from</p>
+                            <h5>$700</h5>
+                            <p>Incl. Freight PDI</p>
+                        </div>
+                        <div class="lightbox__finance">
+                            <h4>LEASE</h4>
+                            <div class="lightbox__grayBG">
+                                <p>Rate Starting from</p>
+                                <h5>5.99%</h5>
+                                <p>48 Months</p>
+                            </div>
+                            <p>Monthly Payment starting from</p>
+                            <h5>$700</h5>
+                            <p>Incl. Freight PDI</p>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <section id="app">
+                <nav class="gray-bg">
+                    <ul class="thumbnails">
+                        <thecarsthumb
+                            @loadlbdata="loadLightbox"
+                            v-for="hero in carData"
+                            :hero="hero"
+                        ></thecarsthumb>
+                    </ul>
+                </nav>
+
+                <thelightbox
+                    @closelightbox="this.showLB=false"
+                    v-if="showLB"
+                    :item="lbData"
+                ></thelightbox>
+            </section>
+
+            <!-- GALLERY -->
+            <section class="highlighs">
+                <div class="highlighs__copy headline">
+                    <p>DISCOVER THE DETAILS.</p>
+                    <h2>HIGHLIGHTS & FEATURES.</h2>
+                </div>
+            </section>
+            <div class="green-border"></div>
+
+            <section class="gallery">
+                <div class="gallery__copy headline">
+                    <h2>UNCOVER EVERY DETAIL.</h2>
+                    <p>
+                        Explore every unique element of the MINI Convertible –
+                        from its 3-in-1 soft top roof to its refined interior
+                        accents.
+                    </p>
+                </div>
+                <div class="parent">
+                    <div class="div1">
+                        <img src="images/1-en.jpg" alt="gallery image 1" />
+                    </div>
+                    <div class="div2">
+                        <img src="images/2-en.jpg" alt="gallery image 1" />
+                    </div>
+                    <div class="div3">
+                        <img src="images/3-en.jpg" alt="gallery image 1" />
+                    </div>
+                    <div class="div4">
+                        <img src="images/4-en.jpg" alt="gallery image 1" />
+                    </div>
+                    <div class="div5">
+                        <img src="images/5-en.jpg" alt="gallery image 1" />
+                    </div>
+                    <div class="div6">
+                        <img src="images/6-en.jpg" alt="gallery image 1" />
+                    </div>
+                </div>
+            </section>
+            <div class="green-border"></div>
+
+            <!-- <section>
+                <h2 class="hidden">contact us</h2>
+                <div>
+                    <h3>STAY IN THE KNOW.</h3>
+                    <h4>
+                        Stay informed about news, special offers, products and
+                        services from or on behalf of MINI Canada.
+                    </h4>
+                    <p>
+                        By clicking submit, I consent to receive emails
+                        containing news, offers, or other products and services
+                        from or on behalf of MINI Canada. You can unsubscribe at
+                        any time using the links in the emails provided or using
+                        the contact information below
+                    </p>
+                    <p>
+                        MINI Canada, a division of BMW Canada Inc., can be
+                        contacted at: 50 Ultimate Drive, Richmond Hill, ON L4S
+                        0C8, customer.service@mini.ca and 1-866-DRV-MINI
+                        (1-866-378-6464). Learn more at www.mini.ca and our
+                        Privacy Policy
+                    </p>
+                </div>
+                <div>
+                    <h3>What’s your name?</h3>
+                </div>
+            </section> -->
+
+            <!-- get in touch -->
+            <section class="touch">
+                <h2 class="hidden">Get in thouch</h2>
+                <div class="touch__grid">
+                    <div class="touch__social">
+                        <p>STAY IN THE KNOW.</p>
+                        <img
+                            src="images/social.svg"
+                            alt="social icons"
+                            width="207"
+                        />
+                    </div>
+                    <div class="touch__touch">
+                        <p>GET IN TOUCH</p>
+                        <div class="touch__link">
+                            <h3>Find a Retailer</h3>
+                            <h3>Contact Us</h3>
+                            <h3>Book a Test Drive</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- make this a sticky footer so it's always at the bottom-->
+        <footer class="footer">
+          
+                <div class="footer__logo">
+                    <p>© 2022 MINI Canada.</p>
+                    <img src="images/mini-logo.svg" alt="" />
+                </div>
+            </nav>
+        </footer>
+
+        <!-- load script tags at the bottom -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="js/main.js" type="module" defer></script>
+    </body>
+</html>

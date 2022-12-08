@@ -1,0 +1,82 @@
+@use "../modules" as *;
+
+.touch {
+    padding: px(20) 0;
+    background-color: $colour-darkest;
+    h3,
+    p {
+        color: white;
+    }
+    p {
+        font-family: $font-script;
+        font-size: px(30);
+        margin-bottom: px(20);
+    }
+    &__grid {
+        padding: px(20) 0;
+        border: 2px solid white;
+        display: grid;
+        margin-inline: auto;
+        justify-items: start;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100% - px(40), px(1140));
+        @include breakpoint(tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__social,
+    &__touch {
+        text-align: center;
+    }
+    &__touch {
+        h3 {
+            font-size: px(14);
+            margin-left: px(10);
+        }
+    }
+
+    &__link {
+        display: flex;
+    }
+}
+
+.footer {
+    a {
+        margin-right: px(20);
+        font-size: px(14);
+    }
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    img {
+        margin: px(20) 0;
+        width: px(82);
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: min(100% - px(20), px(1800));
+    }
+    &__logo {
+        display: flex;
+        gap: px(20);
+        align-items: center;
+    }
+}
+
+.arrow-down {
+    transform: rotate(0);
+    transition: transform 0.3s ease-out;
+}
+
+.rotate {
+    img {
+        width: 500px;
+    }
+    transform: rotate(180deg);
+}

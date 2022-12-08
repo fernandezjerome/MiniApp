@@ -1,0 +1,146 @@
+@use "../modules" as *;
+
+.headline {
+    h2,
+    p {
+        font-family: $font-script;
+    }
+    h2 {
+        font-size: px(50);
+    }
+    p {
+        font-size: px(18);
+    }
+}
+.green-border {
+    height: px(30);
+    background-color: $colour-main;
+}
+
+.hero-page {
+    color: white;
+    background-image: url("../images/hero.jpg");
+    height: 790px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    &__copy {
+        display: grid;
+        margin-inline: auto;
+        justify-items: start;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: start;
+        width: min(100% - px(40), px(1140));
+
+        h2 {
+            margin-top: px(140);
+        }
+    }
+}
+
+.page-info {
+    margin: px(40) 0;
+    display: grid;
+    margin-inline: auto;
+    justify-items: start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: start;
+    width: min(100% - px(40), px(1140));
+    text-align: center;
+
+    p {
+        margin-bottom: px(20);
+    }
+}
+
+.green-buttons {
+    background-color: $colour-main;
+    border: none;
+    padding: px(20);
+    margin: px(5);
+    font-weight: 600;
+}
+
+.highlighs {
+    color: white;
+    background-image: url("../images/feature-highlights_en.jpg");
+    height: 750px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    &__copy {
+        display: grid;
+        margin-inline: auto;
+        justify-items: start;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100% - px(40), px(1140));
+
+        p {
+            margin-top: px(80);
+        }
+    }
+}
+
+.gallery {
+    margin: px(50) 0;
+    &__copy {
+        text-align: center;
+    }
+}
+.parent {
+    margin-top: px(50);
+    display: grid;
+    margin-inline: auto;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: px(20);
+    justify-items: center;
+    width: min(100%, px(1140));
+}
+.div1 {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    grid-area: 1 / 1 / 3 / 3;
+}
+.div2 {
+    grid-area: 1 / 3 / 2 / 4;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.div3 {
+    grid-area: 2 / 3 / 3 / 4;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.div4 {
+    grid-area: 3 / 1 / 4 / 2;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.div5 {
+    grid-area: 4 / 1 / 5 / 2;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.div6 {
+    grid-area: 3 / 2 / 5 / 4;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
